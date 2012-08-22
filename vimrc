@@ -57,4 +57,5 @@ filetype on
 filetype plugin on
 filetype plugin indent on
 
-colorscheme delek
+set background=dark
+colorscheme solarized
