@@ -1,5 +1,5 @@
 [ui]
-username = Benjamin Pollack <benjamin@fogcreek.com>
+username = Benjamin Pollack <benjamin@bitquabit.com>
 editor = vim
 ignore = ~/.hgignore
 
@@ -15,8 +15,16 @@ hgext.record=
 kilnauth = ~/src/dotfiles/kiln-extensions/kilnauth.py
 kiln = ~/src/dotfiles/kiln-extensions/kiln.py
 
+[alias]
+l = pull
+n = push -r .
+no = outgoing -r .
+p = push
+
 [hostfingerprints]
 developers.kilnhg.com = fe:ab:65:89:7c:6f:1a:21:a8:39:54:6c:2a:cb:ca:ae:e9:e5:f0:01
+bqb.kilnhg.com = fe:ab:65:89:7c:6f:1a:21:a8:39:54:6c:2a:cb:ca:ae:e9:e5:f0:01
 
 [kiln_scheme]
+bqb = https://bqb.kilnhg.com/Code
 kourdot = http://our.fogbugz.com/kiln/Code
