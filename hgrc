@@ -7,6 +7,7 @@ ignore = ~/.hgignore
 hgext.color=
 hgext.histedit=
 hgext.largefiles=
+hgext.mq=
 hgext.progress=
 hgext.purge=
 hgext.rebase=
