@@ -4,6 +4,7 @@ syntax on
 
 let mapleader=","
 nnoremap ; :
+vnoremap ; :
 
 set title hidden cursorline
 set visualbell noerrorbells
