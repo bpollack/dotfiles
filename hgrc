@@ -8,6 +8,7 @@ hgext.color=
 hgext.histedit=
 hgext.largefiles=
 hgext.mq=
+hgext.pager=
 hgext.progress=
 hgext.purge=
 hgext.rebase=
@@ -30,3 +31,6 @@ bitbucket.org = 24:9c:45:8b:9c:aa:ba:55:4e:01:6d:58:ff:e4:28:7d:2a:14:ae:3b
 [kiln_scheme]
 bqb = https://bqb.kilnhg.com/Code
 kourdot = http://our.fogbugz.com/kiln/Code
+
+[pager]
+pager = LESS='FSRX' less
