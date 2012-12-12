@@ -21,6 +21,7 @@ kiln = ~/src/dotfiles/kiln-extensions/kiln.py
 l = pull
 n = push -r .
 no = outgoing -r .
+obliterate = purge --all
 p = push
 
 [hostfingerprints]
