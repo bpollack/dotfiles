@@ -35,7 +35,7 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
-inoremap jj <esc>
+inoremap kj <esc>
 
 nnoremap <leader>W <C-w>v<C-w>l
 nnoremap <C-h> <C-w>h
