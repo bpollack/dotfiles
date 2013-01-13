@@ -5,34 +5,70 @@ ignore = ~/.hgignore
 
 [extensions]
 hgext.color=
+hgext.gpg=
+hgext.graphlog=
 hgext.histedit=
 hgext.largefiles=
 hgext.mq=
 hgext.pager=
+hgext.patchbomb=
 hgext.progress=
 hgext.purge=
 hgext.rebase=
 hgext.record=
+hgext.schemes=
 
 hg-prompt = ~/src/dotfiles/hg-prompt/prompt.py
 kilnauth = ~/src/dotfiles/kiln-extensions/kilnauth.py
 kiln = ~/src/dotfiles/kiln-extensions/kiln.py
 
 [alias]
+a = addremove
 l = pull
+lt = parent --template '{latesttag}+{latesttagdistance}-{node|short}\n'
 n = push -r .
 no = outgoing -r .
 obliterate = purge --all
 p = push
 
+obliterate = purge --all
+sendit = email -g -t mercurial-devel@selenic.com -f "Benjamin Pollack <benjamin@bitquabit.com>"
+
+; Log commands
+nlog = log --style=~/src/mercurial-cli-templates/map-cmdline.nlog
+sglog = glog --style=~/src/mercurial-cli-templates/map-cmdline.sglog
+slog = log --style=~/src/mercurial-cli-templates/map-cmdline.slog
+
+[email]
+method = smtp
+
 [hostfingerprints]
-developers.kilnhg.com = c3:83:2c:5a:2d:01:81:5b:1a:61:7d:d9:7d:82:12:38:67:b1:ca:a8
-bqb.kilnhg.com =  c3:83:2c:5a:2d:01:81:5b:1a:61:7d:d9:7d:82:12:38:67:b1:ca:a8
 bitbucket.org = 24:9c:45:8b:9c:aa:ba:55:4e:01:6d:58:ff:e4:28:7d:2a:14:ae:3b
+bqb.kilnhg.com =  c3:83:2c:5a:2d:01:81:5b:1a:61:7d:d9:7d:82:12:38:67:b1:ca:a8
+developers.kilnhg.com = c3:83:2c:5a:2d:01:81:5b:1a:61:7d:d9:7d:82:12:38:67:b1:ca:a8
 
 [kiln_scheme]
 bqb = https://bqb.kilnhg.com/Code
 kourdot = http://our.fogbugz.com/kiln/Code
 
+[merge-tools]
+kdiff3.args = --L1 base --L2 local --L3 other $base $local $other -o $output
+kdiff3.gui = True
+
 [pager]
 pager = LESS='FSRX' less
+attend = annotate, cat, diff, export, glog, log, qdiff, wn, slog, sglog, nlog
+
+[schemes]
+bqb = https://bqb.kilnhg.com/Code/
+our = https://our.fogbugz.com/kiln/Code/
+hg = ssh://hg/
+
+[smtp]
+host = mail.bitquabit.com
+tls = True
+username = benjamin
+
+[web]
+allow_archive = bz2,gz,zip
+style = coal
