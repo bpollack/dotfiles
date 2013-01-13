@@ -21,7 +21,8 @@ set wildignore=*.swp,*.bak,*.pyc
 set list
 set listchars=tab:>-,trail:-
 
-set wrap textwidth=79
+set wrap
+set textwidth=79
 set formatoptions=qrn1
 
 nnoremap <up> <nop>
