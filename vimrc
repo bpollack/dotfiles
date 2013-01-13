@@ -47,6 +47,8 @@ nmap <silent> <leader>ev :e ~/.vimrc<CR>
 nmap <silent> <leader>sv :so ~/.vimrc<CR>
 nmap <silent> <leader><space> :nohlsearch<CR>
 
+au FocusLost * :wa
+
 set history=1000
 set undolevels=1000
 set backup
@@ -61,3 +63,5 @@ filetype plugin indent on
 
 set background=dark
 colorscheme solarized
+
+set guifont=Consolas:h12.00
