@@ -1,3 +1,5 @@
 syntax: glob
+emacs.d/eshell/history
+emacs.d/eshell/lastdir
 vim/backupdir
 vim/undodir
