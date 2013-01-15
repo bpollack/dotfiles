@@ -30,6 +30,7 @@ n = push -r .
 no = outgoing -r .
 obliterate = purge --all
 p = push
+reset = revert --all --no-backup
 
 obliterate = purge --all
 sendit = email -g -t mercurial-devel@selenic.com -f "Benjamin Pollack <benjamin@bitquabit.com>"
