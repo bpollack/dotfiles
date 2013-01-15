@@ -7,3 +7,5 @@
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
+[color]
+	ui = true
