@@ -10,7 +10,7 @@ set title hidden cursorline
 set visualbell noerrorbells
 
 set autoindent smartindent
-set shiftwidth=4 softtabstop=4 tabstop=8 expandtab smarttab
+set shiftwidth=4 softtabstop=4 tabstop=8 expandtab
 set backspace=indent,eol,start
 set scrolloff=3
 
