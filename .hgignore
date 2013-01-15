@@ -1,6 +1,8 @@
 syntax: glob
 emacs.d/auto-save-list
 emacs.d/el-get/.*
+emacs.d/el-get/evil/
+emacs.d/el-get/undo-tree/
 emacs.d/eshell/history
 emacs.d/eshell/lastdir
 vim/backupdir
