@@ -35,9 +35,9 @@ obliterate = purge --all
 sendit = email -g -t mercurial-devel@selenic.com -f "Benjamin Pollack <benjamin@bitquabit.com>"
 
 ; Log commands
-nlog = log --style=~/src/mercurial-cli-templates/map-cmdline.nlog
-sglog = glog --style=~/src/mercurial-cli-templates/map-cmdline.sglog
-slog = log --style=~/src/mercurial-cli-templates/map-cmdline.slog
+nlog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.nlog
+sglog = glog --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.sglog
+slog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.slog
 
 [email]
 method = smtp
