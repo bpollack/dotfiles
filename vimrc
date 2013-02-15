@@ -48,6 +48,7 @@ nmap <silent> <leader>sv :so ~/.vimrc<CR>
 nmap <silent> <leader><space> :nohlsearch<CR>
 
 au FocusLost * :wa
+au filetype go setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 
 set history=1000
 set undolevels=1000
