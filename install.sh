@@ -10,7 +10,10 @@ function ensure_dir {
     test -d "$HOME/$1" || mkdir -p "$HOME/$1"
 }
 
+ensure_dir ".config"
+
 ensure_link "src/dotfiles/emacs.d" ".emacs.d"
+ensure_link "src/dotfiles/fish" ".config/fish"
 ensure_link "src/dotfiles/gitconfig" ".gitconfig"
 ensure_link "src/dotfiles/hgignore" ".hgignore"
 ensure_link "src/dotfiles/hgrc" ".hgrc"
