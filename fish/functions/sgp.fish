@@ -1,5 +1,5 @@
 function sgp -d "Set the GOPATH to the current directory, and add its /bin to the PATH"
-    if [ -n $GOPATH ]
+    if [ -n "$GOPATH" ]
         for x in (seq (count $PATH))
             if [ $PATH[$x] = "$GOPATH/bin" ]
                 set clear $x $clear
