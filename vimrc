@@ -49,6 +49,8 @@ nmap <silent> <leader><space> :nohlsearch<CR>
 
 au FocusLost * :wa
 au filetype go setl noexpandtab shiftwidth=8 softtabstop=8 nolist
+au filetype was setl noexpandtab shiftwidth=8 softtabstop=8 nolist
+au filetype aspvbs setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 
 set history=1000
 set undolevels=1000
