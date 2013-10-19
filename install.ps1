@@ -23,7 +23,9 @@ Ensure-Link "hgrc" "$HOME\.hgrc"
 Ensure-Link "vim" "$HOME\vimfiles" $true
 Ensure-Link "vim" "$HOME\.vim" $true
 Ensure-Link "vimrc" "$HOME\.vimrc"
+
+Ensure-Directory (Split-Path $profile)
 Ensure-Link "profile.ps1" $profile
 
-Ensure-Directory ".vim\backupdir"
-Ensure-Directory ".vim\undodir"
+Ensure-Directory "$HOME\.vim\backupdir"
+Ensure-Directory "$HOME\.vim\undodir"
