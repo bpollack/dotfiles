@@ -6,14 +6,14 @@ function Ensure-Link([string]$source, [string]$target, [bool]$directory = $false
     } else {
         $flag = ""
     }
-    if (! (Test-Path $target)) {
+    if (-not (Test-Path $target)) {
         cmd /c mklink $flag $target $dotfiles\$source
     }
 }
 
 function Ensure-Directory([string]$dir) {
-    if (! (Test-Path $HOME/$dir)) {
-        mkdir -force $HOME/$dir
+    if (-not (Test-Path $dir)) {
+        mkdir -force $dir
     }
 }
 
