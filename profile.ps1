@@ -23,3 +23,11 @@ function sgp([bool]$win32 = $false) {
     }
     $env:PATH += ";$env:GOPATH\bin"
 }
+
+function Test-Command([string]$command) {
+    Get-Command $command -errorAction SilentlyContinue
+}
+
+if (Test-Command plink) {
+    $env:GIT_SSH = (Get-Command plink).path
+}
