@@ -1,5 +1,4 @@
-function mt {
-    param([string]$filename)
+function mt([string]$filename) {
     & gvim --remote-tab-silent $filename
 }
 
