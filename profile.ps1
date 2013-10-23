@@ -1,3 +1,5 @@
+Set-Alias ss Select-String
+
 function mt([string]$filename) {
     & gvim --remote-tab-silent $filename
 }
