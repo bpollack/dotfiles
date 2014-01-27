@@ -69,5 +69,3 @@ set background=dark
 colorscheme solarized
 
 set guifont=Menlo:h12.00
-
-let g:pymode_lint_ignore = "E501"
