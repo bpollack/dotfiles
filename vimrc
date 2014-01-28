@@ -53,6 +53,12 @@ au filetype go setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 au filetype was setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 au filetype aspvbs setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 
+augroup knewton
+    au!
+    au BufRead,BufWrite */KnewtonCrabStacker/*.py setl noexpandtab shiftwidth=8 softtabstop=8 nolist
+    au BufRead,BufWrite */KnewtonCrabStacker/*.py let pymode_lint_ignore="W191,E101"
+augroup END
+
 set history=1000
 set undolevels=1000
 set backup
