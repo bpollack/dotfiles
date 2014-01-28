@@ -3,3 +3,5 @@ function fish_greeting
         ~/src/fortune/fortune -o
     end
 end
+
+set -x PATH /usr/local/bin $PATH
