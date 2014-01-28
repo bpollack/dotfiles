@@ -5,7 +5,7 @@ function __kerrit_users
     if test ! -f $kerrit_users
         return
     end
-    cut -f 2 ~/.kerrit/users.tsv | grep '@knewton.com$' | sed 's/@knewton.com$//'
+    cut -f 2 $kerrit_users | grep '@knewton.com$' | sed 's/@knewton.com$//'
 end
 
 complete -f -c kerrit -n 'commandline -pc | grep -q \'^ *kerrit  *r  *s  *\'' -a '(__kerrit_users)'
