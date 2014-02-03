@@ -17,6 +17,7 @@ hgext.purge=
 hgext.rebase=
 hgext.record=
 hgext.schemes=
+hgext.shelve=
 
 hg-prompt = ~/src/dotfiles/hg-prompt/prompt.py
 kilnauth = ~/src/dotfiles/kiln-extensions/kilnauth.py
