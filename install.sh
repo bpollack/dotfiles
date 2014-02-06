@@ -23,5 +23,7 @@ ensure_link "src/dotfiles/vim" ".vim"
 ensure_link "src/dotfiles/vimrc" ".vimrc"
 
 ensure_dir ".emacs-backups"
+ensure_dir ".pip/wheels"
 ensure_dir ".vim/backupdir"
 ensure_dir ".vim/undodir"
+ensure_dir ".virtualenvs"
