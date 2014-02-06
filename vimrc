@@ -75,4 +75,9 @@ filetype plugin indent on
 set background=dark
 colorscheme solarized
 
-set guifont=Menlo:h12.00
+if has('gui_running')
+    set guifont=Inconsolata\ for\ Powerline:h14.00
+end
+
+set laststatus=2
+let g:airline_powerline_fonts = 1
