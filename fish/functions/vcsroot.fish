@@ -1,4 +1,4 @@
-function vcsroot -d "finds the root of the current repository on disk"
+function vcsroot --description 'finds the root of the current repository on disk'
     if hg id >/dev/null ^&1
         hg root
     else if git rev-parse HEAD >/dev/null ^&1
@@ -8,4 +8,3 @@ function vcsroot -d "finds the root of the current repository on disk"
         return 1
     end
 end
-
