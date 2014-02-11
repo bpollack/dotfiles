@@ -7,6 +7,7 @@
 	ob = clean -fdx
 	ci = commit
 	sa = stash --include-untracked
+	co = checkout
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
