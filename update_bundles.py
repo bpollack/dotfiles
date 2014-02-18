@@ -8,6 +8,7 @@ BUNDLES = path.join(path.abspath(path.dirname(__file__)), 'vim', 'bundle')
 
 for bundle in os.listdir(BUNDLES):
     os.chdir(path.join(BUNDLES, bundle))
+    print 'Updating {}'.format(bundle)
     if path.exists('.hg'):
         subprocess.call(['hg', 'pull'])
         subprocess.call(['hg', 'update'])
