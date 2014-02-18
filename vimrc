@@ -49,9 +49,10 @@ nmap <silent> <leader>sv :so ~/.vimrc<CR>
 nmap <silent> <leader><space> :nohlsearch<CR>
 
 au FocusLost * :wa
-au filetype go setl noexpandtab shiftwidth=8 softtabstop=8 nolist
-au filetype was setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 au filetype aspvbs setl noexpandtab shiftwidth=8 softtabstop=8 nolist
+au filetype go setl noexpandtab shiftwidth=8 softtabstop=8 nolist
+au filetype ruby setl shiftwidth=2 softtabstop=2
+au filetype was setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 
 set history=1000
 set undolevels=1000
