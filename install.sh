@@ -12,6 +12,7 @@ function ensure_dir {
 
 ensure_dir ".config"
 
+ensure_link "src/dotfiles/ackrc" ".ackrc"
 ensure_link "src/dotfiles/emacs.d" ".emacs.d"
 ensure_link "src/dotfiles/fish" ".config/fish"
 ensure_link "src/dotfiles/gitconfig" ".gitconfig"
