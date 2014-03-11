@@ -8,6 +8,7 @@
 	ci = commit
 	sa = stash --include-untracked
 	co = checkout
+	mf = merge --ff-only
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
@@ -18,3 +19,5 @@
 	excludesfile = ~/.gitignore
 [push]
 	default = simple
+[merge]
+	defaultToUpstream = true
