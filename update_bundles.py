@@ -13,4 +13,5 @@ for bundle in os.listdir(BUNDLES):
         subprocess.call(['hg', 'pull'])
         subprocess.call(['hg', 'update'])
     else:
+        subprocess.call(['git', 'checkout', 'master'])
         subprocess.call(['git', 'pull'])
