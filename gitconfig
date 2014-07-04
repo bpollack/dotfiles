@@ -9,6 +9,7 @@
 	sa = stash --include-untracked
 	co = checkout
 	mf = merge --ff-only
+	wn = log --oneline --decorate --graph ..origin/master
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
