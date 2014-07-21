@@ -2,3 +2,4 @@ syntax: glob
 *.pyc
 .ropeproject/
 .venv
+.DS_Store
