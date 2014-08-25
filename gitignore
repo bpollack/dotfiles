@@ -1,7 +1,9 @@
+*.egg
 *.pyc
 .DS_Store
 .ackrc
 .ropeproject
+.tox
 .venv
 ~*
 downloads
