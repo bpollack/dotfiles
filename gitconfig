@@ -9,10 +9,10 @@
 	sa = stash --include-untracked
 	co = checkout
 	mf = merge --ff-only
-	wn = log --oneline --decorate --graph ..origin/master
+	wn = log ..origin/master
 [user]
 	name = Benjamin Pollack
-	email = benjamin@bitquabit.com
+	email = bp@knewton.com
 [color]
 	ui = true
 [core]
@@ -22,3 +22,16 @@
 	default = simple
 [merge]
 	defaultToUpstream = true
+	tool = semanticmerge
+[diff]
+	tool = semanticdiff
+[difftool "semanticdiff"]
+	cmd = /Applications/semanticmerge.app/Contents/MacOS/semanticmerge -s \"$LOCAL\" -d \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool "semanticmerge"]
+	cmd = /Applications/semanticmerge.app/Contents/MacOS/semanticmerge -d \"$LOCAL\" -s \"$REMOTE\" -b \"$BASE\" -r \"$MERGED\"
+	trustExitCode = true
+[mergetool]
+	prompt = false
+	keepBackup = false
