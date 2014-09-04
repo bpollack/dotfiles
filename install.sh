@@ -11,6 +11,7 @@ function ensure_dir {
 }
 
 ensure_dir ".config"
+ensure_dir ".local/bin"
 
 ensure_link "src/dotfiles/ackrc" ".ackrc"
 ensure_link "src/dotfiles/emacs.d" ".emacs.d"
@@ -19,6 +20,7 @@ ensure_link "src/dotfiles/gitconfig" ".gitconfig"
 ensure_link "src/dotfiles/gitignore" ".gitignore"
 ensure_link "src/dotfiles/hgignore" ".hgignore"
 ensure_link "src/dotfiles/hgrc" ".hgrc"
+ensure_link "src/dotfiles/pharo" ".local/bin/pharo"
 ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/dotfiles/vim" ".vim"
 ensure_link "src/dotfiles/vimrc" ".vimrc"
