@@ -4,7 +4,7 @@ function fish_greeting
     end
 end
 
-set -x PATH /usr/local/bin $PATH
+set -x PATH ~/.local/bin /usr/local/bin $PATH
 
 # Python magic
 set -x PIP_USE_WHEEL false
