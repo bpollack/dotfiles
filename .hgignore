@@ -1,9 +1,7 @@
 syntax: glob
 .netrwhist
 emacs.d/auto-save-list
-emacs.d/el-get/.*
-emacs.d/el-get/evil/
-emacs.d/el-get/undo-tree/
+emacs.d/elpa
 emacs.d/eshell/history
 emacs.d/eshell/lastdir
 fish/fish_history
