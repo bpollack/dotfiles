@@ -45,11 +45,6 @@ slog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.slog
 [email]
 method = smtp
 
-[hostfingerprints]
-bitbucket.org = 45:ad:ae:1a:cf:0e:73:47:06:07:e0:88:f5:cc:10:e5:fa:1c:f7:99
-bqb.kilnhg.com =  c3:83:2c:5a:2d:01:81:5b:1a:61:7d:d9:7d:82:12:38:67:b1:ca:a8
-developers.kilnhg.com = c3:83:2c:5a:2d:01:81:5b:1a:61:7d:d9:7d:82:12:38:67:b1:ca:a8
-
 [kiln]
 autoupdate = False
 
