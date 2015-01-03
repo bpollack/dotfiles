@@ -1,0 +1,2 @@
+#!/usr/bin/env fish
+mvim --remote-tab-wait-silent $argv
