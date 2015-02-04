@@ -25,7 +25,7 @@ ensure_link "src/dotfiles/pharo" ".local/bin/pharo"
 ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/dotfiles/vim" ".vim"
 ensure_link "src/dotfiles/vimrc" ".vimrc"
-ensure_link "src/factor-boot-rc" ".factor-boot-rc"
+ensure_link "src/dotfiles/factor-boot-rc" ".factor-boot-rc"
 
 ensure_dir ".emacs-backups"
 ensure_dir ".pip/wheels"
