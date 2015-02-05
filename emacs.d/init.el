@@ -8,6 +8,7 @@
  '(ido-enable-flex-matching t)
  '(ido-everywhere t)
  '(inhibit-startup-screen t)
+ '(package-selected-packages (quote (evil-surround evil-leader)))
  '(require-final-newline t)
  '(server-mode t)
  '(show-paren-mode t)
@@ -33,3 +34,7 @@
       '(("gnu" . "https://elpa.gnu.org/packages/")
 	("marmalade" . "https://marmalade-repo.org/packages/")
 	("melpa" . "http://melpa.milkbox.net/packages/")))
+
+(add-to-list 'load-path "~/src/factor/misc/fuel")
+(require 'fuel-mode)
+(setq fuel-factor-root-dir "~/src/factor")
