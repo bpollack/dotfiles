@@ -52,6 +52,7 @@ autoupdate = False
 bqb = https://bqb.kilnhg.com/Code
 
 [merge-tools]
+kdiff3.executable = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 kdiff3.args = --L1 base --L2 local --L3 other $base $local $other -o $output
 kdiff3.gui = True
 
