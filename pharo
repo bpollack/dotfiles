@@ -1,2 +1,2 @@
 #!/bin/bash
-/Applications/Pharo.app/Contents/MacOS/pharo $@
+/Applications/Pharo.app/Contents/MacOS/pharo $1.image
