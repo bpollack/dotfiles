@@ -7,8 +7,5 @@ end
 set -x PATH ~/.local/bin /usr/local/bin $PATH
 
 # Python magic
-set -x PIP_USE_WHEEL false
-set -x PIP_DOWNLOAD_CACHE "$HOME/.pip/cache"
-
-source ~/src/dotfiles/virtualfish/virtual.fish
-source ~/src/dotfiles/virtualfish/auto_activation.fish
+eval (python -m virtualfish)
+eval (python -m virtualfish auto_activation)
