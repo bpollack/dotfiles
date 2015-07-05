@@ -29,6 +29,7 @@ ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/dotfiles/vim" ".vim"
 ensure_link "src/dotfiles/vimrc" ".vimrc"
 ensure_link "src/dotfiles/factor-boot-rc" ".factor-boot-rc"
+ensure_link "src/dotfiles/idea.vmoptions" "Library/Preferences/IntelliJIdea14/idea.vmoptions"
 
 ensure_dir ".emacs-backups"
 ensure_dir ".pip/wheels"
