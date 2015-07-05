@@ -1,6 +1,6 @@
 function fish_greeting
     if status --is-interactive
-        ~/src/fortune/fortune -o
+        ~/.local/bin/fortune -o
     end
 end
 
