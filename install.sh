@@ -3,7 +3,10 @@
 set -e
 
 function ensure_link {
-    test -L "$HOME/$2" || ln -s "$HOME/$1" "$HOME/$2"
+    if [ ! -L "$HOME/$2" ]; then
+        rm -r "$HOME/$2"
+        ln -s "$HOME/$1" "$HOME/$2"
+    fi
 }
 
 function ensure_dir {
