@@ -4,6 +4,7 @@ emacs.d/auto-save-list
 emacs.d/elpa
 emacs.d/eshell/history
 emacs.d/eshell/lastdir
+emacs.d/games
 fish/fish_history
 fish/fish_read_history
 fish/fishd.*
