@@ -1,0 +1,11 @@
+regexp=^UPDATE\s+
+colours=blue
+===
+regexp=^DELETE\s+
+colour=red
+===
+regexp=^UNDO\s+
+colour=red
+===
+regexp=^ADD\s+
+colour=green
