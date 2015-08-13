@@ -6,7 +6,9 @@ function ensure_link {
     if [ -f "$HOME/$2" ]; then
       rm -r "$HOME/$2"
     fi
-    ln -s "$HOME/$1" "$HOME/$2"
+    if [ ! -L "$HOME/$2" ]; then
+      ln -s "$HOME/$1" "$HOME/$2"
+    fi
 }
 
 function ensure_dir {
