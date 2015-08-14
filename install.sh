@@ -15,8 +15,18 @@ function ensure_dir {
     test -d "$HOME/$1" || mkdir -p "$HOME/$1"
 }
 
+function ensure_hg_repo {
+    test -d "$1" || hg clone $2 $1
+    hg -R $1 pull
+    hg -R $1 update
+}
+
 ensure_dir ".config"
 ensure_dir ".local/bin"
+
+ensure_hg_repo evolve https://bitbucket.org/marmoute/mutable-history
+ensure_hg_repo hg-prompt https://bitbucket.org/sjl/hg-prompt
+ensure_hg_repo mercurial-cli-templates http://bitbucket.org/bpollack/mercurial-cli-templates
 
 ensure_link "src/dotfiles/ackrc" ".ackrc"
 ensure_link "src/dotfiles/emacs.d" ".emacs.d"
