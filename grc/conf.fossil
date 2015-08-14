@@ -1,11 +1,37 @@
+### Status and update commands
+
+regexp=^EDITED\s+
+colours=bright_blue
+===
 regexp=^UPDATE\s+
-colours=blue
+colours=bright_blue
 ===
 regexp=^DELETE\s+
-colour=red
+colour=bright_red
 ===
 regexp=^UNDO\s+
-colour=red
+colour=bright_red
 ===
 regexp=^ADD\s+
+colour=bright_green
+===
+
+
+
+### Diff commands
+
+regexp=^-.*
+colour=red
+===
+regexp=^\+.*
 colour=green
+===
+regexp=^\+\+\+ .*
+colour=bright_green
+===
+regexp=^--- .*
+colour=bright_red
+===
+regexp=^@@ [^@]+ @@
+colour=magenta
+
