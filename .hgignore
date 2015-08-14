@@ -8,5 +8,8 @@ emacs.d/games
 fish/fish_history
 fish/fish_read_history
 fish/fishd.*
+nvim/backupdir
+nvim/plugins
+nvim/undodir
 vim/backupdir
 vim/undodir
