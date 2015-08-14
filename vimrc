@@ -1,6 +1,3 @@
-call pathogen#infect()
-call pathogen#helptags()
-
 syntax on
 
 let mapleader=","
@@ -67,10 +64,9 @@ filetype plugin on
 filetype plugin indent on
 
 set background=dark
-colorscheme solarized
 
 if has('gui_running')
-    set guifont=Inconsolata\ for\ Powerline:h14.00
+    set guifont=InputMono:h12.00
 end
 
 set laststatus=2
@@ -80,3 +76,17 @@ let g:pymode_lint_ignore = "E501"
 let g:opamshare=substitute(system('opam config var share'), '\n$', '', '''')
 execute "set rtp+=".g:opamshare."/merlin/vim"
 execute "set rtp+=".g:opamshare."/merlin/vimbufsync"
+
+call plug#begin('~/.vim/plugins')
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'dag/vim-fish'
+Plug 'klen/python-mode'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+call plug#end()
+
+colorscheme solarized

@@ -63,6 +63,7 @@ filetype plugin indent on
 
 set background=dark
 
+set laststatus=2
 let g:airline_powerline_fonts=1
 
 call plug#begin('~/.nvim/plugins')
