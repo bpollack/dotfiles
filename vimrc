@@ -17,7 +17,12 @@ set ruler wildmenu
 set wildignore=*.swp,*.bak,*.pyc
 
 set list
-set listchars=tab:>-,trail:-
+set listchars+=eol:¬
+set listchars+=extends:❯
+set listchars+=precedes:❮
+set listchars+=trail:⋅
+set listchars+=nbsp:⋅
+set listchars+=tab:>-
 
 set wrap
 set textwidth=79
@@ -66,22 +71,20 @@ filetype plugin indent on
 set background=dark
 
 if has('gui_running')
-    set guifont=InputMono:h12.00
+    set guifont=Inconsolata\ for\ Powerline:h14
 end
 
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:pymode_lint_ignore = "E501"
 
-let g:opamshare=substitute(system('opam config var share'), '\n$', '', '''')
-execute "set rtp+=".g:opamshare."/merlin/vim"
-execute "set rtp+=".g:opamshare."/merlin/vimbufsync"
-
 call plug#begin('~/.vim/plugins')
 Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
 Plug 'dag/vim-fish'
 Plug 'klen/python-mode'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-markdown'
