@@ -80,12 +80,12 @@ let g:pymode_lint_ignore = "E501"
 
 call plug#begin('~/.vim/plugins')
 Plug 'altercation/vim-colors-solarized'
+Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'dag/vim-fish'
 Plug 'klen/python-mode'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-repeat'
