@@ -21,8 +21,6 @@ hgext.shelve=
 
 evolve = ~/src/dotfiles/evolve/hgext/evolve.py
 hg-prompt = ~/src/dotfiles/hg-prompt/prompt.py
-kilnauth = ~/src/dotfiles/kiln-extensions/kilnauth.py
-kiln = ~/src/dotfiles/kiln-extensions/kiln.py
 
 [alias]
 a = addremove
