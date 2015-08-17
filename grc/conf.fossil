@@ -1,10 +1,10 @@
 ### Status and update commands
 
 regexp=^EDITED\s+
-colours=bright_blue
+colours=bright_green
 ===
 regexp=^UPDATE\s+
-colours=bright_blue
+colours=bright_green
 ===
 regexp=^DELETE\s+
 colour=bright_red
