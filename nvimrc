@@ -76,6 +76,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug '~/src/dotfiles/vim-factor'
 call plug#end()
 
 colorscheme solarized
