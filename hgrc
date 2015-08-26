@@ -8,8 +8,6 @@ hgext.color=
 hgext.gpg=
 hgext.graphlog=
 hgext.histedit=
-hgext.largefiles=
-hgext.mq=
 hgext.pager=
 hgext.patchbomb=
 hgext.progress=
@@ -17,7 +15,6 @@ hgext.purge=
 hgext.rebase=
 hgext.record=
 hgext.schemes=
-hgext.shelve=
 
 evolve = ~/src/dotfiles/evolve/hgext/evolve.py
 hg-prompt = ~/src/dotfiles/hg-prompt/prompt.py
@@ -68,4 +65,3 @@ username = benjamin
 
 [web]
 allow_archive = bz2,gz,zip
-style = coal
