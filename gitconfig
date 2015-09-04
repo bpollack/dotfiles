@@ -12,6 +12,7 @@
 	wn = log ..origin/master
 	root = rev-parse --show-toplevel
 	rollback = reset --hard HEAD^
+	dc = diff --cached
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
