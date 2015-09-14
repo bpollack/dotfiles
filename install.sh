@@ -21,6 +21,11 @@ function ensure_hg_repo {
     hg -R $1 update
 }
 
+function ensure_git_repo {
+    test -d "$1" || git clone --recursive $2 $1
+}
+
+
 ensure_dir ".config"
 ensure_dir ".local/bin"
 
@@ -28,9 +33,9 @@ ensure_hg_repo evolve https://bitbucket.org/marmoute/mutable-history
 ensure_hg_repo hg-git https://bitbucket.org/durin42/hg-git
 ensure_hg_repo hg-prompt https://bitbucket.org/sjl/hg-prompt
 ensure_hg_repo mercurial-cli-templates https://bitbucket.org/bpollack/mercurial-cli-templates
+ensure_git_repo ~/.emacs.d https://github.com/syl20bnr/spacemacs
 
 ensure_link "src/dotfiles/ackrc" ".ackrc"
-ensure_link "src/dotfiles/emacs.d" ".emacs.d"
 ensure_link "src/dotfiles/factor-boot-rc" ".factor-boot-rc"
 ensure_link "src/dotfiles/fish" ".config/fish"
 ensure_link "src/dotfiles/gitconfig" ".gitconfig"
@@ -42,10 +47,10 @@ ensure_link "src/dotfiles/idea.vmoptions" "Library/Preferences/IntelliJIdea14/id
 ensure_link "src/dotfiles/nvim" ".nvim"
 ensure_link "src/dotfiles/nvimrc" ".nvimrc"
 ensure_link "src/dotfiles/pharo" ".local/bin/pharo"
+ensure_link "src/dotfiles/spacemacs" ".spacemacs"
 ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/factor/factor" ".local/bin/factor"
 
-ensure_dir ".emacs-backups"
 ensure_dir ".nvim/backupdir"
 ensure_dir ".nvim/undodir"
 ensure_dir ".pip/wheels"
