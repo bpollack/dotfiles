@@ -13,6 +13,7 @@
 	root = rev-parse --show-toplevel
 	rollback = reset --hard HEAD^
 	dc = diff --cached
+	rom = reset --hard origin/master
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
