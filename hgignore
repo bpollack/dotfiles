@@ -1,6 +1,7 @@
 syntax: glob
 *.pyc
 .ropeproject/
+node_modules/
 .venv
 .DS_Store
 .tox
