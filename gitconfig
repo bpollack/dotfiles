@@ -14,6 +14,7 @@
 	rollback = reset --hard HEAD^
 	dc = diff --cached
 	rom = reset --hard origin/master
+	usm = submodule update --recursive
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
