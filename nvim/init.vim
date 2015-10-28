@@ -42,8 +42,8 @@ inoremap kj <esc>
 
 nnoremap <leader>W <C-w>v<C-w>l
 
-nmap <silent> <leader>ev :e ~/.nvimrc<CR>
-nmap <silent> <leader>sv :so ~/.nvimrc<CR>
+nmap <silent> <leader>ev :e ~/.config/nvim/init.vim<CR>
+nmap <silent> <leader>sv :so ~/.config/nvim/init.vim<CR>
 nmap <silent> <leader><space> :nohlsearch<CR>
 
 au FocusLost * :wa
@@ -51,11 +51,9 @@ au filetype go setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 au filetype ruby setl shiftwidth=2 softtabstop=2
 
 set undolevels=1000
-set backup
-set undofile
-set backupdir=~/.nvim/backupdir
-set directory=~/.nvim/backupdir
-set undodir=~/.nvim/undodir
+set backupdir=~/.config/nvim/backupdir
+set directory=~/.config/nvim/backupdir
+set undodir=~/.config/nvim/undodir
 
 filetype on
 filetype plugin on
@@ -66,8 +64,7 @@ set background=dark
 set laststatus=2
 let g:airline_powerline_fonts=1
 
-call plug#begin('~/.nvim/plugins')
-Plug 'altercation/vim-colors-solarized'
+call plug#begin('~/.config/nvim/plugins')
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'dag/vim-fish'
@@ -78,5 +75,3 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug '~/src/dotfiles/vim-factor'
 call plug#end()
-
-colorscheme solarized
