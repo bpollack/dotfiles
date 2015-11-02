@@ -15,6 +15,7 @@
 	dc = diff --cached
 	rom = reset --hard origin/master
 	usm = submodule update --recursive
+	wip = commit -n
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
