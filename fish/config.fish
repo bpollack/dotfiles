@@ -23,3 +23,6 @@ eval (python -m virtualfish auto_activation)
 set -x SHELL /usr/local/bin/fish
 set -x EDITOR nvim
 set -x DNX_BRANCH dev
+
+# OPAM configuration
+. /Users/benjamin/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
