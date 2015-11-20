@@ -12,6 +12,7 @@
      better-defaults
      emacs-lisp
      git
+     go
      html
      markdown
      org
