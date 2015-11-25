@@ -6,5 +6,17 @@ if exists(expanduser('~/khan')):
     KDR = '~/khan/devtools'
     $PATH = [expanduser('~/khan/webapp/third_party/frankenserver'), '$KDR/arcanist/khan-bin', '$KDR/git-bigfile/bin $KDR/git-workflow/bin', '$KDR/ka-clone/bin', '$KDR/khan-linter/bin'] + $PATH
 
+def __sgp(args, stdin=None):
+    try:
+        gopath = $GOPATH
+    except KeyError:
+        gopath = []
+    if gopath:
+        $PATH = [p for p in $PATH if p != '%s/bin' % gopath[0]]
+    $GOPATH = $PWD
+    $PATH = [$GOPATH[0] + '/bin'] + $PATH
+
+aliases['f'] = 'grc fossil'
 aliases['ghg'] = expanduser('~/.virtualenvs/ghg/bin/hg --config extensions.hggit=~/src/dotfiles/hg-git/hggit')
 aliases['ghsync'] = 'ghg n github'
+aliases['sgp'] = __sgp
