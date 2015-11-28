@@ -31,7 +31,7 @@ sendit = email -g -t mercurial-devel@selenic.com -f "Benjamin Pollack <benjamin@
 
 ; Log commands
 nlog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.nlog
-sglog = glog --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.sglog
+sglog = log --graph --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.sglog
 slog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.slog
 
 [merge-tools]
