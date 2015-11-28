@@ -16,6 +16,11 @@ def __sgp(args, stdin=None):
     $GOPATH = $PWD
     $PATH = [$GOPATH[0] + '/bin'] + $PATH
 
+def __code(args, stdin=None):
+    $VSCODE_PWD="$PWD"
+    open -n -b "com.microsoft.VSCode" --args @(' '.join(args))
+
+aliases['code'] = __code
 aliases['f'] = 'grc fossil'
 aliases['ghg'] = expanduser('~/.virtualenvs/ghg/bin/hg --config extensions.hggit=~/src/dotfiles/hg-git/hggit')
 aliases['ghsync'] = 'ghg n github'
