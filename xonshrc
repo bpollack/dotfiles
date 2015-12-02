@@ -7,10 +7,7 @@ if exists(expanduser('~/khan')):
     $PATH = ['~/khan/webapp/third_party/frankenserver', '$KDR/arcanist/khan-bin', '$KDR/git-bigfile/bin $KDR/git-workflow/bin', '$KDR/ka-clone/bin', '$KDR/khan-linter/bin'] + $PATH
 
 def __sgp(args, stdin=None):
-    try:
-        gopath = $GOPATH
-    except KeyError:
-        gopath = []
+    gopath = __xonsh_env__.get('GOPATH', [])
     if gopath:
         $PATH = [p for p in $PATH if p != '%s/bin' % gopath[0]]
     $GOPATH = $PWD
