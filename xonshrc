@@ -1,5 +1,6 @@
 from os.path import exists, expanduser
 $PATH = [expanduser('~/.local/bin'), '/usr/local/bin'] + $PATH
+$EDITOR = 'nvim'
 
 if exists(expanduser('~/khan')):
     # Add frankenserver bins to PATH
