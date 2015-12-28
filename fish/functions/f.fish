@@ -1,3 +1,3 @@
-function fossil
+function f
     command grc fossil $argv
 end
