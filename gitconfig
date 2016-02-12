@@ -24,6 +24,7 @@
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore
+	quotepath = false
 [push]
 	default = simple
 [merge]
