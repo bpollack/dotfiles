@@ -1,4 +1,2 @@
-USING: editors.emacs namespaces tools.scaffold vocabs ;
+USING: editors.visual-studio-code namespaces tools.scaffold ;
 "Benjamin Pollack" developer-name set
-"/Applications/Emacs.app/Contents/MacOS/bin/emacsclient" emacsclient-path set-global
-"fuel" require
