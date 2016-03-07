@@ -64,6 +64,9 @@ set background=dark
 set laststatus=2
 let g:airline_powerline_fonts=1
 
+let g:FactorRoot = "~/src/factor"
+let g:FactorNewVocabRoot = "~/src/fraktor"
+
 call plug#begin('~/.config/nvim/plugins')
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
