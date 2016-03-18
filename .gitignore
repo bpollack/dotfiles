@@ -1,13 +1,16 @@
-syntax: glob
 .netrwhist
 emacs.d/auto-save-list
 emacs.d/elpa
 emacs.d/eshell/history
 emacs.d/eshell/lastdir
 emacs.d/games
+evolve
 fish/fish_history
 fish/fish_read_history
 fish/fishd.*
+hg-git
+hg-prompt
+mercurial-cli-templates
 nvim/backupdir
 nvim/plugins
 nvim/undodir
