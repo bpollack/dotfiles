@@ -50,8 +50,7 @@ before layers configuration."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(spacemacs-light
-                         spacemacs-dark
-                         )
+                         spacemacs-dark)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    dotspacemacs-default-font '("Fantasque Sans Mono"
@@ -111,10 +110,7 @@ before layers configuration."
   ;; User initialization goes here
   )
 
-(defun dotspacemacs/config ()
-  "Configuration function.
- This function is called at the very end of Spacemacs initialization after
-layers configuration."
+(defun dotspacemacs/user-config ()
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
