@@ -71,6 +71,7 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'dag/vim-fish'
+Plug 'nathangrigg/vim-beancount'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
