@@ -6,9 +6,9 @@ end
 
 set -x PATH ~/.local/bin /usr/local/bin $PATH
 
-if test -d /opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/
-    set -x PATH $PATH /opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
-    set -x MANPATH $MANPATH /opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/help/man /usr/local/share/man /usr/share/man /opt/x11/share/man
+if test -d /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/
+    set -x PATH $PATH /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
+    set -x MANPATH $MANPATH /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/help/man /usr/local/share/man /usr/share/man /opt/x11/share/man
 end
 
 if test -d ~/khan
