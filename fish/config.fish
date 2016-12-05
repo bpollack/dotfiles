@@ -10,6 +10,11 @@ if test -d ~/src/goroot
     set -x PATH ~/src/goroot/bin $PATH
 end
 
+if test -d ~/src/plan9port
+    set -x PLAN9 $HOME/src/plan9port
+    set -x PATH $PATH $PLAN9/bin
+end
+
 if test -d /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/
     set -x PATH $PATH /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
     set -x MANPATH $MANPATH /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/help/man /usr/local/share/man /usr/share/man /opt/x11/share/man
