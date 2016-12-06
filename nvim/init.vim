@@ -8,7 +8,6 @@ vnoremap ; :
 set title hidden cursorline
 set visualbell noerrorbells
 
-set smartindent
 set shiftwidth=4 softtabstop=4 tabstop=8 expandtab
 set scrolloff=3
 
@@ -26,7 +25,6 @@ set listchars+=tab:>-
 
 set wrap
 set textwidth=79
-set formatoptions=qrn1
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -51,9 +49,6 @@ au filetype go setl noexpandtab shiftwidth=8 softtabstop=8 nolist
 au filetype ruby setl shiftwidth=2 softtabstop=2
 
 set undolevels=1000
-set backupdir=~/.config/nvim/backupdir
-set directory=~/.config/nvim/backupdir
-set undodir=~/.config/nvim/undodir
 
 filetype on
 filetype plugin on
@@ -61,7 +56,6 @@ filetype plugin indent on
 
 set background=dark
 
-set laststatus=2
 let g:airline_powerline_fonts=1
 
 let g:FactorRoot = "~/src/factor"
