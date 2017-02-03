@@ -6,12 +6,25 @@ function Set-Directory([string]$dir) {
     }
 }
 
+function Set-HgRepo([string]$dir, [string]$url) {
+    if (-not (Test-Path $dir)) {
+        hg clone $url $dir
+    }
+    hg -R $dir pull
+    hg -R $dir update
+}
+
 try {
     $null = Get-Command scoop -ErrorAction stop
     scoop install concfg git-with-openssh go gradle mercurial nodejs pshazz python
 } catch {
     Write-Host "D'oh! Install scoop, then rerun this script"
 }
+
+Set-HgRepo evolve https://bitbucket.org/marmoute/mutable-history
+Set-HgRepo hg-git https://bitbucket.org/durin42/hg-git
+Set-HgRepo hg-prompt https://bitbucket.org/sjl/hg-prompt
+Set-HgRepo mercurial-cli-templates https://bitbucket.org/bpollack/mercurial-cli-templates
 
 Copy-Item "gitconfig" "$HOME\.gitconfig"
 Copy-Item "gitignore" "$HOME\.gitignore"
