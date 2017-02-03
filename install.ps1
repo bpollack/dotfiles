@@ -17,6 +17,13 @@ function Set-Directory([string]$dir) {
     }
 }
 
+try {
+    $null = Get-Command scoop -ErrorAction stop
+    scoop install concfg git-with-openssh go gradle mercurial nodejs pshazz python
+} catch {
+    Write-Host "D'oh! Install scoop, then rerun this script"
+}
+
 Copy-Item "gitconfig" "$HOME\.gitconfig"
 Copy-Item "gitignore" "$HOME\.gitignore"
 Copy-Item "hgignore" "$HOME\.hgignore"
