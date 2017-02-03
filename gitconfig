@@ -22,7 +22,7 @@
 [color]
 	ui = true
 [core]
-	editor = nvim
+	editor = code --wait
 	excludesfile = ~/.gitignore
 	quotepath = false
 [push]
