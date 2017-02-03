@@ -18,6 +18,7 @@ function Set-Directory([string]$dir) {
 }
 
 Copy-Item "gitconfig" "$HOME\.gitconfig"
+Copy-Item "gitignore" "$HOME\.gitignore"
 Copy-Item "hgignore" "$HOME\.hgignore"
 Copy-Item "hgrc" "$HOME\.hgrc"
 
