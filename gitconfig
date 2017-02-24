@@ -29,19 +29,6 @@
 	default = simple
 [merge]
 	defaultToUpstream = true
-	tool = semanticmerge
-[diff]
-	tool = semanticdiff
-[difftool "semanticdiff"]
-	cmd = /Applications/semanticmerge.app/Contents/MacOS/semanticmerge -s \"$LOCAL\" -d \"$REMOTE\"
-[difftool]
-	prompt = false
-[mergetool "semanticmerge"]
-	cmd = /Applications/semanticmerge.app/Contents/MacOS/semanticmerge -d \"$LOCAL\" -s \"$REMOTE\" -b \"$BASE\" -r \"$MERGED\"
-	trustExitCode = true
-[mergetool]
-	prompt = false
-	keepBackup = false
 [rerere]
 	enabled = true
 [kaclone]
@@ -50,7 +37,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-
 [transfer]
 	fsckObjects = true
 [credential]
