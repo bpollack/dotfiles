@@ -16,7 +16,7 @@ function Set-HgRepo([string]$dir, [string]$url) {
 
 try {
     $null = Get-Command scoop -ErrorAction stop
-    scoop install concfg git-with-openssh go gradle mercurial nodejs pshazz python
+    scoop install concfg git-with-openssh go gradle mercurial nodejs openjdk pshazz python
 } catch {
     Write-Host "D'oh! Install scoop, then rerun this script"
 }
