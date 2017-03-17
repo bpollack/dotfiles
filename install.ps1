@@ -21,6 +21,8 @@ try {
     Write-Host "D'oh! Install scoop, then rerun this script"
 }
 
+pshazz use myty
+
 Set-HgRepo evolve https://bitbucket.org/marmoute/mutable-history
 Set-HgRepo hg-git https://bitbucket.org/durin42/hg-git
 Set-HgRepo hg-prompt https://bitbucket.org/sjl/hg-prompt
