@@ -1,4 +1,4 @@
-$env:GOPATH = 'C:\Users\benjamin\src\godev'
+$env:GOPATH = "$env:USERPROFILE\src\godev"
 $env:PATH += ";$env:GOPATH\bin"
 
 try {
