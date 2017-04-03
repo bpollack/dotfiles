@@ -6,6 +6,17 @@ function Set-Directory([string]$dir) {
     }
 }
 
+function Set-Symlink([string]$src, [string]$dest) {
+    $WinVer = [System.Environment]::OSVersion.Version.Build
+    if ($WinVer -gt 14972) {
+        if (-not (Test-Path $dest)) {
+            cmd /c mklink $dest (Resolve-Path $src)
+        }
+    } else {
+        Copy-Item $src $dest
+    }
+}
+
 function Set-HgRepo([string]$dir, [string]$url) {
     if (-not (Test-Path $dir)) {
         hg clone $url $dir
@@ -28,10 +39,10 @@ Set-HgRepo hg-git https://bitbucket.org/durin42/hg-git
 Set-HgRepo hg-prompt https://bitbucket.org/sjl/hg-prompt
 Set-HgRepo mercurial-cli-templates https://bitbucket.org/bpollack/mercurial-cli-templates
 
-Copy-Item "gitconfig" "$HOME\.gitconfig"
-Copy-Item "gitignore" "$HOME\.gitignore"
-Copy-Item "hgignore" "$HOME\.hgignore"
-Copy-Item "hgrc" "$HOME\.hgrc"
+Set-Symlink "gitconfig" "$HOME\.gitconfig"
+Set-Symlink "gitignore" "$HOME\.gitignore"
+Set-Symlink "hgignore" "$HOME\.hgignore"
+Set-Symlink "hgrc" "$HOME\.hgrc"
 
 Set-Directory (Split-Path $profile)
-Copy-Item "profile.ps1" $profile
+Set-Symlink "profile.ps1" $profile
