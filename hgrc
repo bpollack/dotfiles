@@ -13,7 +13,7 @@ hgext.purge=
 hgext.rebase=
 hgext.record=
 
-evolve = ~/src/dotfiles/evolve/hgext/evolve.py
+evolve = ~/src/dotfiles/evolve/hgext3rd
 hg-prompt = ~/src/dotfiles/hg-prompt/prompt.py
 
 [alias]
