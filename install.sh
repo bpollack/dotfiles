@@ -47,7 +47,6 @@ if [ -d "~/Library" ]; then
     ensure_link "src/dotfiles/pycharm.vmoptions" "Library/Preferences/PyCharm40/pycharm.vmoptions"
 fi
 ensure_link "src/dotfiles/nvim" ".config/nvim"
-ensure_link "src/dotfiles/pharo" ".local/bin/pharo"
 ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/factor/factor" ".local/bin/factor"
 ensure_link "src/xonshrc" ".xonshrc"
