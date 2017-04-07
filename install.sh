@@ -33,7 +33,6 @@ ensure_hg_repo evolve https://bitbucket.org/marmoute/mutable-history
 ensure_hg_repo hg-git https://bitbucket.org/durin42/hg-git
 ensure_hg_repo hg-prompt https://bitbucket.org/sjl/hg-prompt
 ensure_hg_repo mercurial-cli-templates https://bitbucket.org/bpollack/mercurial-cli-templates
-ensure_git_repo ~/.emacs.d https://github.com/syl20bnr/spacemacs
 
 ensure_link "src/dotfiles/ackrc" ".ackrc"
 ensure_link "src/dotfiles/factor-boot-rc" ".factor-boot-rc"
@@ -49,7 +48,6 @@ if [ -d "~/Library" ]; then
 fi
 ensure_link "src/dotfiles/nvim" ".config/nvim"
 ensure_link "src/dotfiles/pharo" ".local/bin/pharo"
-ensure_link "src/dotfiles/spacemacs" ".spacemacs"
 ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/factor/factor" ".local/bin/factor"
 ensure_link "src/xonshrc" ".xonshrc"
