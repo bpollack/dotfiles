@@ -49,7 +49,6 @@ fi
 ensure_link "src/dotfiles/nvim" ".config/nvim"
 ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/factor/factor" ".local/bin/factor"
-ensure_link "src/xonshrc" ".xonshrc"
 
 ensure_dir ".config/nvim/backupdir"
 ensure_dir ".config/nvim/undodir"
