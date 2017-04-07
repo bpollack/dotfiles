@@ -22,7 +22,6 @@
 [color]
 	ui = true
 [core]
-	editor = code --wait
 	excludesfile = ~/.gitignore
 	quotepath = false
 [push]
