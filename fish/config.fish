@@ -7,6 +7,11 @@ function fish_greeting
 end
 
 set -x PATH ~/.local/bin /usr/local/bin $PATH
+
+if test -d /usr/local/go
+    set -x PATH /usr/local/go/bin $PATH
+end
+
 if test -d ~/src/goroot
     set -x GOPATH ~/src/goroot
     set -x PATH ~/src/goroot/bin $PATH
