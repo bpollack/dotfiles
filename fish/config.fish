@@ -17,12 +17,6 @@ if test -d ~/src/goroot
     set -x PATH ~/src/goroot/bin $PATH
 end
 
-
-if test -d /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/
-    set -x PATH $PATH /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
-    set -x MANPATH $MANPATH /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/help/man /usr/local/share/man /usr/share/man /opt/x11/share/man
-end
-
 if test -d ~/khan
     # Add frankenserver bins to PATH
     set KDR ~/khan/devtools
