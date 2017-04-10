@@ -31,3 +31,8 @@ eval (python -m virtualfish)
 eval (python -m virtualfish auto_activation)
 set -x SHELL /usr/local/bin/fish
 set -x EDITOR nvim
+
+# Fix for WSL's dumb umask issue
+if [ (umask) = "0000" ]
+    umask 022
+end
