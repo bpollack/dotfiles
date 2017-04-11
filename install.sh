@@ -34,21 +34,21 @@ ensure_hg_repo hg-git https://bitbucket.org/durin42/hg-git
 ensure_hg_repo hg-prompt https://bitbucket.org/sjl/hg-prompt
 ensure_hg_repo mercurial-cli-templates https://bitbucket.org/bpollack/mercurial-cli-templates
 
-ensure_link "src/dotfiles/ackrc" ".ackrc"
 ensure_link "src/dotfiles/factor-boot-rc" ".factor-boot-rc"
 ensure_link "src/dotfiles/fish" ".config/fish"
 ensure_link "src/dotfiles/gitconfig" ".gitconfig"
 ensure_link "src/dotfiles/gitignore" ".gitignore"
-ensure_link "src/dotfiles/grc" ".grc"
 ensure_link "src/dotfiles/hgignore" ".hgignore"
 ensure_link "src/dotfiles/hgrc" ".hgrc"
+ensure_link "src/dotfiles/joerc" ".joerc"
+ensure_link "src/dotfiles/nvim" ".config/nvim"
+ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
+ensure_link "src/factor/factor" ".local/bin/factor"
+
 if [ -d "~/Library" ]; then
     ensure_link "src/dotfiles/idea.vmoptions" "Library/Preferences/IntelliJIdea14/idea.vmoptions"
     ensure_link "src/dotfiles/pycharm.vmoptions" "Library/Preferences/PyCharm40/pycharm.vmoptions"
 fi
-ensure_link "src/dotfiles/nvim" ".config/nvim"
-ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
-ensure_link "src/factor/factor" ".local/bin/factor"
 
 ensure_dir ".config/nvim/backupdir"
 ensure_dir ".config/nvim/undodir"
