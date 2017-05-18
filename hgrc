@@ -39,9 +39,6 @@ kdiff3.executable = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 kdiff3.args = --L1 base --L2 local --L3 other $base $local $other -o $output
 kdiff3.gui = True
 
-[pager]
-pager = LESS='FSRX' less
-attend = annotate, cat, diff, export, glog, log, qdiff, wn, slog, sglog, nlog
 
 [web]
 allow_archive = bz2,gz,zip
