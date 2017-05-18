@@ -32,7 +32,6 @@ ensure_dir ".local/bin"
 ensure_hg_repo evolve https://bitbucket.org/marmoute/mutable-history
 ensure_hg_repo hg-git https://bitbucket.org/durin42/hg-git
 ensure_hg_repo hg-prompt https://bitbucket.org/sjl/hg-prompt
-ensure_hg_repo mercurial-cli-templates https://bitbucket.org/bpollack/mercurial-cli-templates
 
 ensure_link "src/dotfiles/factor-boot-rc" ".factor-boot-rc"
 ensure_link "src/dotfiles/fish" ".config/fish"

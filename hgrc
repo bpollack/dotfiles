@@ -27,11 +27,6 @@ p = push
 reset = revert --no-backup
 
 obliterate = purge --all
-; Log commands
-nlog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.nlog
-sglog = log --graph --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.sglog
-slog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.slog
-
 
 [web]
 allow_archive = bz2,gz,zip
