@@ -34,11 +34,6 @@ nlog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.nlog
 sglog = log --graph --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.sglog
 slog = log --style=$HOME/src/dotfiles/mercurial-cli-templates/map-cmdline.slog
 
-[merge-tools]
-kdiff3.executable = /Applications/kdiff3.app/Contents/MacOS/kdiff3
-kdiff3.args = --L1 base --L2 local --L3 other $base $local $other -o $output
-kdiff3.gui = True
-
 
 [web]
 allow_archive = bz2,gz,zip
