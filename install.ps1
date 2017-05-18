@@ -42,6 +42,7 @@ Set-Symlink "gitconfig" "$HOME\.gitconfig"
 Set-Symlink "gitignore" "$HOME\.gitignore"
 Set-Symlink "hgignore" "$HOME\.hgignore"
 Set-Symlink "hgrc" "$HOME\.hgrc"
+Set-Symlink "factor-boot-rc" "$HOME\.factor-boot-rc"
 
 Set-Directory (Split-Path $profile)
 Set-Symlink "profile.ps1" $profile
