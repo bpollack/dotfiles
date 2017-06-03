@@ -4,10 +4,8 @@ editor = nvim
 ignore = ~/.hgignore
 
 [extensions]
-hgext.color=
 hgext.gpg=
 hgext.histedit=
-hgext.pager=
 hgext.patchbomb=
 hgext.purge=
 hgext.rebase=
