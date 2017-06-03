@@ -38,11 +38,14 @@ Set-HgRepo evolve https://bitbucket.org/marmoute/mutable-history
 Set-HgRepo hg-git https://bitbucket.org/durin42/hg-git
 Set-HgRepo hg-prompt https://bitbucket.org/sjl/hg-prompt
 
+Set-Directory $env:APPDATA\pip
+
 Set-Symlink "gitconfig" "$HOME\.gitconfig"
 Set-Symlink "gitignore" "$HOME\.gitignore"
 Set-Symlink "hgignore" "$HOME\.hgignore"
 Set-Symlink "hgrc" "$HOME\.hgrc"
 Set-Symlink "factor-boot-rc" "$HOME\.factor-boot-rc"
+Set-Symlink "pip.conf" "$env:APPDATA\pip\pip.ini"
 
 Set-Directory (Split-Path $profile)
 Set-Symlink "profile.ps1" $profile
