@@ -11,7 +11,8 @@ hgext.purge=
 hgext.rebase=
 hgext.record=
 
-evolve = ~/src/dotfiles/evolve/hgext3rd
+evolve=
+
 hg-git = ~/src/dotfiles/hg-git/hggit
 hg-prompt = ~/src/dotfiles/hg-prompt/prompt.py
 
