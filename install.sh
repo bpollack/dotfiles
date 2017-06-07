@@ -27,6 +27,7 @@ function ensure_git_repo {
 
 
 ensure_dir ".config"
+ensure_dir ".config/pip"
 ensure_dir ".local/bin"
 
 ensure_hg_repo evolve https://bitbucket.org/marmoute/mutable-history
@@ -41,6 +42,7 @@ ensure_link "src/dotfiles/hgignore" ".hgignore"
 ensure_link "src/dotfiles/hgrc" ".hgrc"
 ensure_link "src/dotfiles/joerc" ".joerc"
 ensure_link "src/dotfiles/nvim" ".config/nvim"
+ensure_link "src/dotfiles/pip.conf" ".config/pip/pip.conf"
 ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/factor/factor" ".local/bin/factor"
 
