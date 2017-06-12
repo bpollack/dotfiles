@@ -3,7 +3,6 @@ evolve
 fish/fish_history
 fish/fish_read_history
 fish/fishd.*
-hg-git
 hg-prompt
 mercurial-cli-templates
 nvim/backupdir

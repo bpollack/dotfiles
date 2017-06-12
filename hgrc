@@ -12,8 +12,8 @@ hgext.rebase=
 hgext.record=
 
 evolve=
+hggit=
 
-hg-git = ~/src/dotfiles/hg-git/hggit
 hg-prompt = ~/src/dotfiles/hg-prompt/prompt.py
 
 [alias]
