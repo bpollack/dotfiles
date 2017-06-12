@@ -6,7 +6,8 @@ function fish_greeting
     end
 end
 
-set -x PATH ~/.local/bin /usr/local/bin $PATH
+set -x PATH ~/.local/bin /usr/local/bin ~/.local/zulu/bin $PATH
+set -x JAVA_HOME ~/.local/zulu
 
 if test -d /usr/local/go
     set -x PATH /usr/local/go/bin $PATH
