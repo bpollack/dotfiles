@@ -8,6 +8,3 @@ mercurial-cli-templates
 nvim/backupdir
 nvim/plugins
 nvim/undodir
-vim/backupdir
-vim/plugins
-vim/undodir
