@@ -30,7 +30,6 @@ ensure_dir ".config"
 ensure_dir ".config/pip"
 ensure_dir ".local/bin"
 
-ensure_hg_repo hg-git https://bitbucket.org/durin42/hg-git
 ensure_hg_repo hg-prompt https://bitbucket.org/sjl/hg-prompt
 
 ensure_link "src/dotfiles/factor-boot-rc" ".factor-boot-rc"

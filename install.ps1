@@ -34,7 +34,6 @@ try {
 
 pshazz use myty
 
-Set-HgRepo hg-git https://bitbucket.org/durin42/hg-git
 Set-HgRepo hg-prompt https://bitbucket.org/sjl/hg-prompt
 
 Set-Directory $env:APPDATA\pip
