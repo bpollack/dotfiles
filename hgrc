@@ -1,6 +1,6 @@
 [ui]
 username = Benjamin Pollack <benjamin@bitquabit.com>
-editor = nvim
+editor = kak
 ignore = ~/.hgignore
 
 [extensions]
