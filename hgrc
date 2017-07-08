@@ -25,10 +25,19 @@ no = outgoing -r .
 obliterate = purge --all
 p = push
 reset = revert --no-backup
+sl = log -Tsl
 obliterate = purge --all
+
+[color]
+changeset.rev = cyan
+changeset.description = bold
+changeset.meta = italic
 
 [commands]
 status.relative = 1
+
+[templates]
+sl = "{label('changeset.rev', rev)}{label('branches.current', branches)} {label('changeset.description', desc|firstline|strip)} ({label('changeset.meta', date|age)} {label('changeset.meta', 'by')} {label('changeset.meta', author|person)}) {label('bookmarks.active', bookmarks)} {label('tags.normal', tags)}\n"
 
 [web]
 allow_archive = bz2,gz,zip
