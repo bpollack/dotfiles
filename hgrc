@@ -23,15 +23,18 @@ lt = parent --template '{latesttag}+{latesttagdistance}-{node|short}\n'
 n = push -r .
 no = outgoing -r .
 obliterate = purge --all
+obliterate = purge --all
 p = push
 reset = revert --no-backup
 sl = log -Tsl
-obliterate = purge --all
+slg = sl --graph
+wn = log -Tsl -rreverse(.::tip)
+wng = wn --graph
 
 [color]
 changeset.rev = cyan
 changeset.description = bold
-changeset.meta = italic
+changeset.meta = dim italic
 
 [commands]
 status.relative = 1
