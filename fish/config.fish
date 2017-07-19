@@ -44,3 +44,5 @@ eval (python -m virtualfish auto_activation)
 set -x SHELL /usr/local/bin/fish
 set -x EDITOR kak
 
+fundle plugin 'tuvistavie/fish-ssh-agent'
+fundle init
