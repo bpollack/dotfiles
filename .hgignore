@@ -1,5 +1,5 @@
+syntax: glob
 .netrwhist
-evolve
 fish/fish_history
 fish/fish_read_history
 fish/fishd.*
