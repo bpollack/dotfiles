@@ -3,6 +3,7 @@ syntax: glob
 fish/fish_history
 fish/fish_read_history
 fish/fishd.*
+fish/fundle
 hg-prompt
 mercurial-cli-templates
 nvim/backupdir
