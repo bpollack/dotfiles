@@ -1,3 +1,8 @@
+# Fix for WSL's dumb umask issue
+if [ (umask) = "0000" ]
+    umask 022
+end
+
 function fish_greeting
     if status --is-interactive
         if test -f ~/local/bin/fortune
@@ -30,7 +35,3 @@ eval (python -m virtualfish auto_activation)
 set -x SHELL /usr/local/bin/fish
 set -x EDITOR kak
 
-# Fix for WSL's dumb umask issue
-if [ (umask) = "0000" ]
-    umask 022
-end
