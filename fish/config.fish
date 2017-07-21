@@ -46,3 +46,5 @@ set -x EDITOR kak
 
 fundle plugin 'tuvistavie/fish-ssh-agent'
 fundle init
+
+ssh-add
