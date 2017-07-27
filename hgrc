@@ -23,7 +23,6 @@ lt = parent --template '{latesttag}+{latesttagdistance}-{node|short}\n'
 n = push -r .
 no = outgoing -r .
 obliterate = purge --all
-obliterate = purge --all
 p = push
 reset = revert --no-backup
 sl = log -Tsl
