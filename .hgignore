@@ -5,7 +5,6 @@ fish/fish_read_history
 fish/fishd.*
 fish/fundle
 hg-prompt
-mercurial-cli-templates
 nvim/backupdir
 nvim/plugins
 nvim/undodir
