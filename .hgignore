@@ -4,7 +4,6 @@ fish/fish_history
 fish/fish_read_history
 fish/fishd.*
 fish/fundle
-hg-prompt
 nvim/backupdir
 nvim/plugins
 nvim/undodir

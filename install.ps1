@@ -34,8 +34,6 @@ try {
 
 pshazz use myty
 
-Set-HgRepo hg-prompt https://bitbucket.org/sjl/hg-prompt
-
 Set-Directory $env:APPDATA\pip
 
 Set-Symlink "gitconfig" "$HOME\.gitconfig"

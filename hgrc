@@ -14,8 +14,6 @@ hgext.record=
 evolve=
 hggit=
 
-hg-prompt = ~/src/dotfiles/hg-prompt/prompt.py
-
 [alias]
 a = addremove
 l = pull
