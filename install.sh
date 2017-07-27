@@ -38,16 +38,10 @@ ensure_link "src/dotfiles/gitconfig" ".gitconfig"
 ensure_link "src/dotfiles/gitignore" ".gitignore"
 ensure_link "src/dotfiles/hgignore" ".hgignore"
 ensure_link "src/dotfiles/hgrc" ".hgrc"
-ensure_link "src/dotfiles/joerc" ".joerc"
 ensure_link "src/dotfiles/nvim" ".config/nvim"
 ensure_link "src/dotfiles/pip.conf" ".config/pip/pip.conf"
 ensure_link "src/dotfiles/tmux.conf" ".tmux.conf"
 ensure_link "src/factor/factor" ".local/bin/factor"
-
-if [ -d "~/Library" ]; then
-    ensure_link "src/dotfiles/idea.vmoptions" "Library/Preferences/IntelliJIdea14/idea.vmoptions"
-    ensure_link "src/dotfiles/pycharm.vmoptions" "Library/Preferences/PyCharm40/pycharm.vmoptions"
-fi
 
 ensure_dir ".config/nvim/backupdir"
 ensure_dir ".config/nvim/undodir"
