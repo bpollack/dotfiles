@@ -14,9 +14,9 @@ end
 set -gx PATH ~/.local/bin /usr/local/bin $PATH
 
 # If we're on a Mac, we probably have zulu; add it
-set zulu_path ~/.local/zulu/bin
+set zulu_path ~/.local/zulu
 if test -d $zulu_path
-    set -gx PATH $zulu_path $PATH
+    set -gx PATH $zulu_path/bin $PATH
     set -gx JAVA_HOME $zulu_path
 end
 
