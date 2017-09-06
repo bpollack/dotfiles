@@ -1,6 +1,6 @@
 [ui]
 username = Benjamin Pollack <benjamin@bitquabit.com>
-editor = code --wait --new-window
+editor = code --wait
 ignore = ~/.hgignore
 
 [extensions]
