@@ -31,13 +31,6 @@ if test -d ~/src/goroot
     set -gx PATH ~/src/goroot/bin $PATH
 end
 
-# For Khan Academy!
-if test -d ~/khan
-    # Add frankenserver bins to PATH
-    set KDR ~/khan/devtools
-    set -gx PATH ~/khan/webapp/third_party/frankenserver $KDR/arcanist/khan-bin $KDR/git-bigfile/bin $KDR/git-workflow/bin $KDR/ka-clone/bin $KDR/khan-linter/bin $PATH
-end
-
 # Python magic
 eval (python2 -m virtualfish)
 eval (python2 -m virtualfish auto_activation)
