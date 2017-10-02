@@ -53,4 +53,8 @@ if [ (uname -a | grep Microsoft) ]
     fundle plugin 'tuvistavie/fish-ssh-agent'
     fundle init
     ssh-add
+else
+    fundle plugin 'fisherman/rbenv'
+    fundle plugin 'oh-my-fish/plugin-bundler'
+    fundle init
 end
