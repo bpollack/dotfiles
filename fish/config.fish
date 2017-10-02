@@ -31,6 +31,11 @@ if test -d ~/src/goroot
     set -gx PATH ~/src/goroot/bin $PATH
 end
 
+# For Spreedly!
+if test -d ~/dev
+    set -gx PATH /usr/local/opt/gnupg@1.4/libexec/gpgbin $PATH
+end
+
 # Python magic
 eval (python2 -m virtualfish)
 eval (python2 -m virtualfish auto_activation)
