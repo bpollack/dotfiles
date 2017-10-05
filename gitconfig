@@ -36,6 +36,8 @@
 	smudge = git-lfs smudge %f
 	required = true
 [transfer]
-	fsckObjects = true
+	fsckObjects = false
 [credential]
 	helper = manager
+[include]
+	path = .gitconfig-corporate
