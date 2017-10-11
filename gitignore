@@ -2,10 +2,8 @@
 *.egg-info
 *.pyc
 .DS_Store
-.ackrc
-.ropeproject
-.tox
+.idea
 .venv
-~*
 downloads
 node_modules
+~*
