@@ -13,18 +13,6 @@ end
 
 set -gx PATH ~/.local/bin /usr/local/bin $PATH
 
-# If we're on a Mac, we probably have zulu; add it
-set zulu_path ~/.local/zulu
-if test -d $zulu_path
-    set -gx PATH $zulu_path/bin $PATH
-    set -gx JAVA_HOME $zulu_path
-end
-
-# On Macs, we have Go installed custom; add it to path if present
-if test -d /usr/local/go
-    set -gx PATH /usr/local/go/bin $PATH
-end
-
 # Go root
 if test -d ~/src/goroot
     set -gx GOPATH ~/src/goroot
