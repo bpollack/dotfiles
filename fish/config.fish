@@ -28,9 +28,6 @@ end
 eval (python2 -m virtualfish)
 eval (python2 -m virtualfish auto_activation)
 
-# OPAM configuration
-. /Users/benjamin/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
-
 # General
 set -gx SHELL /usr/local/bin/fish
 set -gx EDITOR nvim
