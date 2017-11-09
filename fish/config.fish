@@ -28,9 +28,16 @@ end
 eval (python2 -m virtualfish)
 eval (python2 -m virtualfish auto_activation)
 
-# Ruby magic
-status --is-interactive; and source (rbenv init -|psub)
-
 # General
 set -gx SHELL /usr/local/bin/fish
 set -gx EDITOR nvim
+
+if [ (uname -a | grep Microsoft) ]
+    fundle plugin 'tuvistavie/fish-ssh-agent'
+    fundle init
+    ssh-add
+else
+    fundle plugin 'fisherman/rbenv'
+    fundle plugin 'oh-my-fish/plugin-bundler'
+    fundle init
+end
