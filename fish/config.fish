@@ -40,5 +40,6 @@ if [ (uname -a | grep Microsoft) ]
     fundle init
     ssh-add
 else
+    fundle plugin 'edc/bass'
     fundle init
 end
