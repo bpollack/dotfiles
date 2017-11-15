@@ -13,9 +13,8 @@
 	root = rev-parse --show-toplevel
 	rollback = reset --hard HEAD^
 	dc = diff --cached
-	rom = reset --hard origin/master
 	usm = submodule update --recursive
-	wip = commit -n
+	mop = fetch --prune
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
