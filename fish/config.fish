@@ -31,6 +31,15 @@ eval (python2 -m virtualfish auto_activation)
 # Ruby magic
 status --is-interactive; and source (rbenv init -|psub)
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc' ]
+    if type source > /dev/null
+        source '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
+    else
+        . '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
+    end
+end
+
 # General
 set -gx SHELL /usr/local/bin/fish
 set -gx EDITOR nvim
