@@ -1,20 +1,22 @@
 [alias]
-	hist = log --oneline --decorate --graph
+	ci = commit
+	co = checkout
+	dc = diff --cached
+	f = fetch
 	gl = log -12 --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+	gll = log --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+	hist = log --oneline --decorate --graph
 	l = log -18 --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
 	ll = log --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
-	gll = log --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
-	ob = clean -fdx
-	ci = commit
-	sa = stash --include-untracked
-	co = checkout
 	mf = merge --ff-only
-	wn = log ..origin/master
-	root = rev-parse --show-toplevel
-	rollback = reset --hard HEAD^
-	dc = diff --cached
-	usm = submodule update --recursive
 	mop = fetch --prune
+	ob = clean -fdx
+	pu = push -u
+	rbo = rebase origin/master
+	rs = reset --hard
+	sa = stash --include-untracked
+	st = status
+	wn = log ..origin/master
 [user]
 	name = Benjamin Pollack
 	email = benjamin@bitquabit.com
