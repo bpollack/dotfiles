@@ -1,7 +1,10 @@
 #!/bin/sh
 
+brew cask install zulu
+brew upgrade
 brew install \
     elixir \
+    docker \
     fd \
     fish \
     git \
