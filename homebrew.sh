@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew cask install zulu
+brew cask install docker zulu
 brew upgrade
 brew install \
     elixir \
