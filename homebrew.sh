@@ -3,8 +3,9 @@
 brew cask install docker zulu
 brew upgrade
 brew install \
-    elixir \
+    dep \
     docker \
+    elixir \
     fd \
     fish \
     git \

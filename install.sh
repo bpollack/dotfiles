@@ -47,3 +47,5 @@ ensure_dir ".config/nvim/backupdir"
 ensure_dir ".config/nvim/undodir"
 ensure_dir ".pip/wheels"
 ensure_dir ".virtualenvs"
+
+ensure_dir "src/goroot/bin"
