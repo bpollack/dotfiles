@@ -14,9 +14,9 @@ end
 set -gx PATH ~/.local/bin /usr/local/bin $PATH
 
 # Go root
-if test -d ~/src/goroot
-    set -gx GOPATH ~/src/goroot
-    set -gx PATH ~/src/goroot/bin $PATH
+if test -d ~/src/gop
+    set -gx GOPATH ~/src/gop
+    set -gx PATH ~/src/gop/bin $PATH
 end
 
 # For Spreedly!
