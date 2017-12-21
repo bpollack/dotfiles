@@ -37,7 +37,7 @@
 	smudge = git-lfs smudge %f
 	required = true
 [transfer]
-	fsckObjects = false
+	fsckObjects = true
 [credential]
 	helper = manager
 [include]
