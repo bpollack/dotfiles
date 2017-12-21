@@ -11,17 +11,17 @@ function fish_greeting
     end
 end
 
-set -gx PATH ~/.local/bin /usr/local/bin $PATH
+set -x PATH ~/.local/bin /usr/local/bin $PATH
 
 # Go root
 if test -d ~/src/gop
-    set -gx GOPATH ~/src/gop
-    set -gx PATH ~/src/gop/bin $PATH
+    set -x GOPATH ~/src/gop
+    set -x PATH ~/src/gop/bin $PATH
 end
 
 # For Spreedly!
 if test -d ~/dev
-    set -gx PATH /usr/local/opt/gnupg@1.4/libexec/gpgbin $PATH
+    set -x PATH /usr/local/opt/gnupg@1.4/libexec/gpgbin $PATH
 end
 
 # Python magic
@@ -40,9 +40,15 @@ if [ -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc' ]
     end
 end
 
+# # Plan 9 root
+# if test -d ~/src/plan9
+#     set -x PLAN9 ~/src/plan9
+#     set -x PATH $PATH ~/src/plan9/bin
+# end
+
 # General
-set -gx SHELL /usr/local/bin/fish
-set -gx EDITOR nvim
+set -x SHELL /usr/local/bin/fish
+set -x EDITOR nvim
 
 if [ (uname -a | grep Microsoft) ]
     fundle plugin 'tuvistavie/fish-ssh-agent'
