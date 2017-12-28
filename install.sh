@@ -31,6 +31,7 @@ ensure_dir ".config/pip"
 ensure_dir ".local/bin"
 ensure_dir ".pip"
 
+ensure_link "src/dotfiles/asdfrc" ".asdfrc"
 ensure_link "src/dotfiles/factor-boot-rc" ".factor-boot-rc"
 ensure_link "src/dotfiles/fish" ".config/fish"
 ensure_link "src/dotfiles/gitconfig" ".gitconfig"

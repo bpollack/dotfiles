@@ -28,9 +28,6 @@ end
 eval (python2 -m virtualfish)
 eval (python2 -m virtualfish auto_activation)
 
-# Ruby magic
-status --is-interactive; and source (rbenv init -|psub)
-
 # Miscellaneous magic
 test -f  /usr/local/opt/asdf/asdf.fish; and source /usr/local/opt/asdf/asdf.fish
 
