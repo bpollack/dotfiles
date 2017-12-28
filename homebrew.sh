@@ -20,10 +20,6 @@ brew install \
     packer \
     python \
     python3 \
-    rbenv \
     ripgrep \
-    rust \
-    task \
-    tasksh \
     terraform \
     yarn
