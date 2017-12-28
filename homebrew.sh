@@ -1,11 +1,12 @@
 #!/bin/sh
 
-brew cask install docker zulu
+brew cask install docker gitup zulu
 brew upgrade
 brew install \
+    asdf \
     dep \
-    docker \
     elixir \
+    exa \
     fd \
     fish \
     git \
