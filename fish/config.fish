@@ -31,6 +31,9 @@ eval (python2 -m virtualfish auto_activation)
 # Ruby magic
 status --is-interactive; and source (rbenv init -|psub)
 
+# Miscellaneous magic
+test -f  /usr/local/opt/asdf/asdf.fish; and source /usr/local/opt/asdf/asdf.fish
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc' ]
     if type source > /dev/null
