@@ -5,7 +5,6 @@ brew upgrade
 brew install \
     asdf \
     dep \
-    elixir \
     exa \
     fd \
     fish \
