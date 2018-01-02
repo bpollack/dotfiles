@@ -14,6 +14,8 @@ brew install \
     httpie \
     hugo \
     jq \
+    minio \
+    minio-mc \
     mosh \
     neovim \
     node \
