@@ -58,18 +58,15 @@ set background=dark
 
 let g:airline_powerline_fonts=1
 
-let g:FactorRoot = "~/src/factor"
-let g:FactorNewVocabRoot = "~/src/fraktor"
-
 call plug#begin('~/.config/nvim/plugins')
 Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'dag/vim-fish'
-Plug 'nathangrigg/vim-beancount'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug '~/src/dotfiles/vim-factor'
 call plug#end()
