@@ -23,4 +23,5 @@ brew install \
     python3 \
     ripgrep \
     terraform \
+    tmux \
     yarn
