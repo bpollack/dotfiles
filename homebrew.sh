@@ -10,7 +10,6 @@ brew install \
     fish \
     git \
     go \
-    gpg \
     httpie \
     hugo \
     jq \
