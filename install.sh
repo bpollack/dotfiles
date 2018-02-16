@@ -48,3 +48,6 @@ ensure_dir ".pip/wheels"
 ensure_dir ".virtualenvs"
 
 ensure_dir "src/gop/bin"
+ensure_dir "src/gop/src"
+
+ensure_link "src/gop/src" "src/gos"
