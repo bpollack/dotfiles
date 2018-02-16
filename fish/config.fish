@@ -50,10 +50,9 @@ end
 set -x SHELL /usr/local/bin/fish
 set -x EDITOR nvim
 
-if [ (uname -a | grep Microsoft) ]
+if [ ! (uname -a | grep Darwin) ]
     fundle plugin 'tuvistavie/fish-ssh-agent'
     fundle init
-    ssh-add
 else
     fundle plugin 'edc/bass'
     fundle init
