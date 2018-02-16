@@ -29,7 +29,7 @@ eval (python2 -m virtualfish)
 eval (python2 -m virtualfish auto_activation)
 
 # Miscellaneous magic
-test -f  /usr/local/opt/asdf/asdf.fish; and source /usr/local/opt/asdf/asdf.fish
+test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc' ]
