@@ -3,9 +3,7 @@
 brew cask install docker gitup zulu
 brew upgrade
 brew install \
-    asdf \
     dep \
-    exa \
     fd \
     fish \
     git \
@@ -17,11 +15,8 @@ brew install \
     minio-mc \
     mosh \
     neovim \
-    node \
-    packer \
     python \
     python3 \
     ripgrep \
-    terraform \
     tmux \
     yarn
