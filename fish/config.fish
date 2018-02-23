@@ -53,6 +53,10 @@ if [ ! (uname -a | grep Darwin) ]
 end
 fundle init
 
+if [ (ssh-add -L | grep -i 'no identities') ]
+    ssh-add
+end
+
 #
 # Miscellaneous magic
 test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
