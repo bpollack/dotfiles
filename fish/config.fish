@@ -33,7 +33,7 @@ if test -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
 end
 
 # General
-set -x SHELL /usr/local/bin/fish
+set -x SHELL (which fish)
 set -x EDITOR nvim
 
 fundle plugin 'edc/bass'
