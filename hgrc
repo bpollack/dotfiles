@@ -1,6 +1,6 @@
 [ui]
 username = Benjamin Pollack <benjamin@bitquabit.com>
-editor = code --wait
+editor = nvim
 ignore = ~/.hgignore
 
 [extensions]
