@@ -1,8 +1,3 @@
-# Fix for WSL's dumb umask issue
-if [ (umask) = "0000" ]
-    umask 022
-end
-
 function fish_greeting
     if status --is-interactive
         if test -f ~/local/bin/fortune
