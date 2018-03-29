@@ -24,7 +24,7 @@ eval (python2 -m virtualfish)
 eval (python2 -m virtualfish auto_activation)
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc' ]
+if test -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
     if type source > /dev/null
         source '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
     else
@@ -43,12 +43,12 @@ set -x SHELL /usr/local/bin/fish
 set -x EDITOR nvim
 
 fundle plugin 'edc/bass'
-if [ ! (uname -a | grep Darwin) ]
+if test not (uname -a | grep Darwin)
     fundle plugin 'tuvistavie/fish-ssh-agent'
 end
 fundle init
 
-if [ (ssh-add -L | grep -i 'no identities') ]
+if test (ssh-add -L | grep -i 'no identities')
     ssh-add
 end
 
