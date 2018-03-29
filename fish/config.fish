@@ -32,12 +32,6 @@ if test -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
     end
 end
 
-# Plan 9 root
-if test -d ~/src/plan9
-    set -x PLAN9 ~/src/plan9
-    set -x PATH $PATH ~/src/plan9/bin
-end
-
 # General
 set -x SHELL /usr/local/bin/fish
 set -x EDITOR nvim
