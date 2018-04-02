@@ -42,9 +42,6 @@ fundle init
 
 if test (ssh-add -L | grep -i 'no identities')
     ssh-add
-    if test -f ~/.ssh/google_compute_engine
-        ssh-add ~/.ssh/google_compute_engine
-    end
 end
 
 #
