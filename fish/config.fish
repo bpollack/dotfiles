@@ -1,8 +1,6 @@
 function fish_greeting
-    if status --is-interactive
-        if test -f ~/.local/bin/fortune
-            ~/.local/bin/fortune -o
-        end
+    if status --is-interactive; and test -f ~/.local/bin/fortune
+        ~/.local/bin/fortune -o
     end
 end
 
