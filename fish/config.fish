@@ -17,6 +17,9 @@ if test -d ~/dev
     set -x PATH /usr/local/opt/gnupg@1.4/libexec/gpgbin $PATH
 end
 
+# Miscellaneous magic
+test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
+
 # Python magic
 eval (python2 -m virtualfish)
 eval (python2 -m virtualfish auto_activation)
@@ -35,7 +38,7 @@ set -x SHELL (which fish)
 set -x EDITOR nvim
 
 fundle plugin 'edc/bass'
-if test not (uname -a | grep Darwin)
+if test ! (uname -a | grep Darwin)
     fundle plugin 'tuvistavie/fish-ssh-agent'
 end
 fundle init
@@ -44,6 +47,3 @@ if test (ssh-add -L | grep -i 'no identities')
     ssh-add
 end
 
-#
-# Miscellaneous magic
-test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
