@@ -43,7 +43,6 @@ if test ! (uname -a | grep Darwin)
 end
 fundle init
 
-if test (ssh-add -L | grep -i 'no identities')
+if test ! (uname -a | grep Darwin); and test (ssh-add -L | grep -i 'no identities')
     ssh-add
 end
-
