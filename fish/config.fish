@@ -20,10 +20,6 @@ end
 # Miscellaneous magic
 test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
 
-# Python magic
-eval (python2 -m virtualfish)
-eval (python2 -m virtualfish auto_activation)
-
 # The next line updates PATH for the Google Cloud SDK.
 if test -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
     if type source > /dev/null
