@@ -31,14 +31,3 @@ end
 
 # General
 set -x SHELL (which fish)
-set -x EDITOR nvim
-
-fundle plugin 'edc/bass'
-if test ! (uname -a | egrep 'Darwin|Linux')
-    fundle plugin 'tuvistavie/fish-ssh-agent'
-end
-fundle init
-
-if test ! (uname -a | egrep 'Darwin|Linux'); and test (ssh-add -L | grep -i 'no identities')
-    ssh-add
-end
