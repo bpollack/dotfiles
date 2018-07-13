@@ -1,5 +1,5 @@
 function fish_greeting
-    if status --is-interactive; and test -f ~/.local/bin/fortune
+    if begin status --is-interactive; and test -f ~/.local/bin/fortune; end
         ~/.local/bin/fortune -o
     end
 end
@@ -21,11 +21,11 @@ end
 test -f ~/.asdf/asdf.fish; and source ~/.asdf/asdf.fish
 
 # The next line updates PATH for the Google Cloud SDK.
-if test -f '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
+if test -f '~/.local/google-cloud-sdk/path.fish.inc'
     if type source > /dev/null
-        source '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
+        source '~/.local/google-cloud-sdk/path.fish.inc'
     else
-        . '/Users/benjamin/.local/google-cloud-sdk/path.fish.inc'
+        . '~/.local/google-cloud-sdk/path.fish.inc'
     end
 end
 
