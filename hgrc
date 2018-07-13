@@ -41,3 +41,6 @@ sl = "{label('changeset.rev', rev)}{label('branches.current', branches)} {label(
 
 [web]
 allow_archive = bz2,gz,zip
+
+; Include local overrides
+%include ~/.hgrc_local
