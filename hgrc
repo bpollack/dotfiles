@@ -10,6 +10,7 @@ hgext.patchbomb=
 hgext.purge=
 hgext.rebase=
 hgext.record=
+hgext.schemes=
 
 evolve=
 hggit=
@@ -35,6 +36,10 @@ changeset.meta = dim italic
 
 [commands]
 status.relative = 1
+
+[schemes]
+bb = ssh://hg@bitbucket.org/
+github = git+ssh://git@github.com/
 
 [templates]
 sl = "{label('changeset.rev', rev)}{label('branches.current', branches)} {label('changeset.description', desc|firstline|strip)} ({label('changeset.meta', date|age)} {label('changeset.meta', 'by')} {label('changeset.meta', author|person)}) {label('bookmarks.active', bookmarks)} {label('tags.normal', tags)}\n"
