@@ -16,6 +16,7 @@
 	ob = clean -fdx
 	pu = push -u
 	rbo = rebase origin/master
+	rom = reset --hard origin/master
 	rbp = !git rebase origin/master && git push -f
 	rs = reset --hard
 	sa = stash --include-untracked
