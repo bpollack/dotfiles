@@ -15,9 +15,10 @@
 	mop = fetch --prune
 	ob = clean -fdx
 	pu = push -u
+	rbi = rebase -i origin/master
 	rbo = rebase origin/master
-	rom = reset --hard origin/master
 	rbp = !git rebase origin/master && git push -f
+	rom = reset --hard origin/master
 	rs = reset --hard
 	sa = stash --include-untracked
 	st = status
