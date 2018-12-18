@@ -1,17 +1,17 @@
 #!/bin/sh
 
-brew cask install docker gitup zulu
-brew upgrade
+brew cask install \
+    corretto \
+    docker \
+    gitup \
+    visual-studio-code
+
 brew install \
     fd \
     fish \
     git \
     httpie \
     jq \
-    minio \
-    minio-mc \
-    mosh \
     neovim \
     ripgrep \
-    tmux \
-    yarn
+    tmux
