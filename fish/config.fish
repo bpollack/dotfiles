@@ -31,3 +31,4 @@ end
 
 # General
 set -x SHELL (which fish)
+set -x EDITOR nvim
