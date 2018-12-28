@@ -12,9 +12,9 @@ if test -d ~/src/gop
     set -x PATH ~/src/gop/bin $PATH
 end
 
-# For Spreedly!
-if test -d ~/dev
-    set -x PATH /usr/local/opt/gnupg@1.4/libexec/gpgbin $PATH
+# For Bakpax!
+if test -d ~/src/laniakea/bin
+    set -x PATH ~/src/laniakea/bin $PATH
 end
 
 # Miscellaneous magic
