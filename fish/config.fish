@@ -14,7 +14,7 @@ end
 
 # For Bakpax!
 if test -d ~/src/laniakea/bin
-    set -x PATH ~/src/laniakea/bin $PATH
+    set -x PATH $PATH ~/src/laniakea/bin
 end
 
 # Miscellaneous magic
