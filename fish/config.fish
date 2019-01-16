@@ -29,6 +29,9 @@ if test -f '~/.local/google-cloud-sdk/path.fish.inc'
     end
 end
 
+# Add yarn global path
+set -x PATH (yarn global bin) $PATH
+
 # General
 set -x SHELL (which fish)
 set -x EDITOR nvim
