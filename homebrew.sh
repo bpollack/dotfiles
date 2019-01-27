@@ -11,7 +11,12 @@ brew install \
     fish \
     git \
     httpie \
+    hub \
     jq \
+    kakoune \
+    minio-mc \
     neovim \
     ripgrep \
-    tmux
+    sqlite \
+    tmux \
+    yarn --without-node
