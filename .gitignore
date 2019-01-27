@@ -1,6 +1,7 @@
 .netrwhist
 fish/fish_history
 fish/fish_read_history
+fish/fish_variables
 fish/fishd.*
 fish/fundle
 nvim/backupdir
