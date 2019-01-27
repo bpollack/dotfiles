@@ -51,3 +51,5 @@ ensure_dir "src/gop/bin"
 ensure_dir "src/gop/src"
 
 ensure_link "src/gop/src" "src/gos"
+
+test -f ~/.asdf/asdf.fish || git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.3
